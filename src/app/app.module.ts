@@ -3,9 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { FactoryMethodComponent } from './creation/factory-method/factory-method.component';
+import { AbstractFactoryComponent } from './creation/abstract-factory/abstract-factory.component';
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FactoryMethodComponent,
+    AbstractFactoryComponent,
   ],
   imports: [
     BrowserModule
