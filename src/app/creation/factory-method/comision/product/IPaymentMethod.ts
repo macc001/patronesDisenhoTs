@@ -1,3 +1,3 @@
-export default interface IPaymentMethod {
+export interface IPaymentMethod {
   comision(): number;
 }

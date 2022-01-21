@@ -1,7 +1,7 @@
-import IPaymentMethod from '../product/IPaymentMethod';
+import { IPaymentMethod } from '../product/IPaymentMethod';
 
-export default class PayPal implements IPaymentMethod {
-    comision(): number {
-        return 0.06;
-    }
+export class PayPal implements IPaymentMethod {
+  comision(): number {
+    return 0.06;
+  }
 }

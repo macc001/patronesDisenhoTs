@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FactoryMethodComponent } from './factory-method.component';
 
-import { FactoryMethodComponent } from './comision/create/factory-method';
 
 describe('FactoryMethodComponent', () => {
   let component: FactoryMethodComponent;

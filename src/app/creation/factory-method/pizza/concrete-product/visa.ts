@@ -1,7 +1,7 @@
-import IPaymentMethod from '../product/IPaymentMethod';
+import { IPizzaMethod } from '../product/IPizzaMethod';
 
-export default class Visa implements IPaymentMethod {
-  comision(): number {
-    return 0.05;
+export class Cancha implements IPizzaMethod {
+  createPizza(origin: string): void {
+    console.log('crear pizza cancha ', origin);
   }
 }

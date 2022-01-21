@@ -1,6 +1,6 @@
-import IPaymentMethod from '../product/IPaymentMethod';
-import PaymentMethodFactory from '../concrete-create/payment-method-factory';
-import PaymentType from '../concrete-create/paymentType';
+import { IPaymentMethod } from '../product/IPaymentMethod';
+import { PaymentMethodFactory } from '../concrete-create/payment-method-factory';
+import { PaymentType } from '../concrete-create/paymentType';
 
 export class FactoryMethod {
   public paymentType?: IPaymentMethod;
