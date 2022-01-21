@@ -3,19 +3,12 @@ import { IConnectionMethod } from '../product/IConnectionMethod';
 import { ConnectionType } from '../concrete-create/connectionType';
 import { ConnectionMethodFactory } from '../concrete-create/connection-method-factory';
 
-export class FactoryMethod {
+export class ConnectionMethod {
   public paymentType?: IConnectionMethod;
-  public commission: number = 0;
 
-  constructor(private type: ConnectionType, public amount: number) {}
+  constructor(private type: ConnectionType) {}
 
   create(): void {
-    // set payment type
     this.paymentType = ConnectionMethodFactory.createPaymentType(this.type);
-
-    // calculate commission
-    // this.commission = this.paymentType.comision() * this.amount;
-
-    // ...
   }
 }
